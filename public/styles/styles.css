@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+:root {
+    --primary-color: #504ec0;
+    --secundary-color: #F7DF1E;
+    --color-green: #68f774;
+    --color-blue: rgb(217, 241, 121);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(224, 233, 250);
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 30px;
+    background: var(--primary-color);
+    border-radius: 0 0 5px 5px;
+}
+
+header nav {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+header nav a {
+    font-size: 28px;
+    font: bold;
+    text-decoration: none;
+    color: rgb(230, 234, 253);
+    position: relative;
+}
+
+header nav a+a {
+    margin-left: 30px;
+}
+
+
+
+header nav a:hover{
+    color: var(--color-blue);
+    font-weight: 500;
+    transition: color 550ms;
+}
+
+header a::after {
+
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-blue);
+    position: absolute;
+    left: 0;
+    bottom:-2px;
+
+}
+
+header nav a:hover::after{
+    
+    width: 100%;
+    transition: width 600ms ease-in-out;
+    
+}
