@@ -26,9 +26,9 @@ server
         return res.render("studants")
     })
 
-// server.use(function (req, res) {
-//     res.status(404).render("not-found");
-// });
+server.use(function (req, res) {
+    res.status(404).render("not-found");
+});
 
 
 
