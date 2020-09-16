@@ -3,9 +3,9 @@
 
 :root {
     --primary-color: #504ec0;
-    --secundary-color: #F7DF1E;
+    --secundary-color: #d3f53d;
     --color-green: #68f774;
-    --color-blue: rgb(217, 241, 121);
+    
 }
 
 * {
@@ -44,7 +44,7 @@ header nav a+a {
 
 
 header nav a:hover{
-    color: var(--color-blue);
+    color: var(--color-green);
     font-weight: 500;
     transition: color 550ms;
 }
@@ -54,7 +54,7 @@ header a::after {
     content: "";
     width: 0%;
     height: 2px;
-    background-color: var(--color-blue);
+    background-color: var(--color-green);
     position: absolute;
     left: 0;
     bottom:-2px;
